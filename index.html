@@ -93,6 +93,11 @@
                 $('.SCORMExerciseList__Control')[0].style.display = 'none'
             });
 
+            waitForElm('.IsLink').then((e) => {
+                console.log("waited 3");
+                $('.IsLink')[0].style.display = 'none'
+            });
+
         });
     </script>
 </body>
