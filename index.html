@@ -77,9 +77,15 @@
 
             waitForElm('.SCORMExerciseList__ListWrapper').then((elm) => {
                 console.log("waited");
-                $('.SCORMExerciseList__ListWrapper')[0].children[1].children[0].style.display = 'none';
-                $('.SCORMExerciseList__ListWrapper')[0].children[1].children[1].style.display = 'none';
-                $('.SCORMExerciseList__ListWrapper')[0].children[1].children[3].style.display = 'none';
+
+                var awhile = 1000; // 1 second
+                var lookForElements = function () {
+                    $('.SCORMExerciseList__ListWrapper')[0].children[1].children[0].style.display = 'none';
+                    $('.SCORMExerciseList__ListWrapper')[0].children[1].children[1].style.display = 'none';
+                    $('.SCORMExerciseList__ListWrapper')[0].children[1].children[3].style.display = 'none';
+
+                }
+                setTimeout(lookForElements, awhile);
             });
 
             waitForElm('.SCORMExerciseList__Control').then((e) => {
