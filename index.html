@@ -80,9 +80,9 @@
 
                 var awhile = 100; // 0.1 second
                 var lookForElements = function () {
-                    $('.SCORMExerciseList__ListWrapper')[0].children[1].children[0].style.display = 'none';
-                    $('.SCORMExerciseList__ListWrapper')[0].children[1].children[1].style.display = 'none';
-                    $('.SCORMExerciseList__ListWrapper')[0].children[1].children[3].style.display = 'none';
+                 //   $('.SCORMExerciseList__ListWrapper')[0].children[1].children[0].style.display = 'none';
+                 //   $('.SCORMExerciseList__ListWrapper')[0].children[1].children[1].style.display = 'none';
+                 //   $('.SCORMExerciseList__ListWrapper')[0].children[1].children[3].style.display = 'none';
 
                 }
                 setTimeout(lookForElements, awhile);
@@ -90,12 +90,12 @@
 
             waitForElm('.SCORMExerciseList__Control').then((e) => {
                 console.log("waited 2");
-                $('.SCORMExerciseList__Control')[0].style.display = 'none'
+                //$('.SCORMExerciseList__Control')[0].style.display = 'none'
             });
 
             waitForElm('.ExerciseTitle__LogoWrapper svg').then((e) => {
                 console.log("waited 3");
-                $('.ExerciseTitle__LogoWrapper svg')[0].style.visibility='hidden'
+               // $('.ExerciseTitle__LogoWrapper svg')[0].style.visibility='hidden'
                 
             });
 
