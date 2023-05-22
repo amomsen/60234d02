@@ -75,10 +75,10 @@
                 });
             }
 
-            waitForElm('.SCORMExerciseList__ListWrapper').then((elm) => {
+            waitForElm('.SCORMExerciseList__ListWrapper ul li').then((elm) => {
                 console.log("waited");
 
-                var awhile = 1000; // 1 second
+                var awhile = 100; // 0.1 second
                 var lookForElements = function () {
                     $('.SCORMExerciseList__ListWrapper')[0].children[1].children[0].style.display = 'none';
                     $('.SCORMExerciseList__ListWrapper')[0].children[1].children[1].style.display = 'none';
